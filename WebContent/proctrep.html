@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bangalore Institute of Technology</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bit logo.jpg" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .row {
+            margin-top: 20px;
+            margin-left: 20px;
+            
+        }
+        
+        img {
+            height: 150px;
+            width: 150px;
+        }
+        
+        .heading {
+            color: blue;
+            padding-left: 25px;
+        }
+        
+        .img1 {
+            height: 400px;
+            width: 350px;
+            background-color: blue;
+            margin: 0 auto;
+            text-align: center;
+        }
+         table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        .carousel{
+        text-align:center;
+        margin:auto;
+        padding:1% 10%;
+        height: 400px;
+        weight: 400px;
+        }
+        
+        #footer {
+            background-color: grey;
+            color: white;
+            text-align: right;
+            clear: both;
+            position: relative;
+            height: 45px;
+            margin-top:40px; 
+        }
+        
+        h1 {
+            line-height: 1.5;
+            font-size: 50px;
+            color: blue;
+            margin-left: 20px;
+        }
+        
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+        body {
+            margin: 20px 10px 20px 20px;
+        }
+    </style>
+</head>
+
+<body>
+<form action="proctrep" method="get">
+    <div class="row">
+        <div class="col-md-1.5">
+            <img src="bit logo.jpg" alt="bit-logo">
+        </div>
+        <div class="col-md-10.5">
+            <h1>Bangalore Institute <br>of Technology</h1>
+        </div>
+    </div>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="">PROCTOR PORTAL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="teachersubjectselectionsheet.html">Log Out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+<br>
+
+<table>
+        <thead>
+            <tr>
+	<th>
+               ENTER PROCTOR DETAILS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	</th>
+</tr>
+        <tr>
+            <td> ENTER THE PROCTOR_NAME</td>
+            <td>
+                <h3><input type="text" name="name" placeholder="enter the proctor_name">
+                    
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>ENTER THE PROCTOR_ID</td>
+            <td>
+               <h3><input type="text" name="pid" placeholder="enter the proctor_id">
+                   
+                </h3>
+            </td>
+        </tr>
+  	</table>
+    <br>
+    <center>
+    <input type="submit" name="submit" value="add" style=" height: 30px">
+   <a href="index1.html"> <input type="button" name="cancel" value="back" style=" height: 30px"></a>
+    </center>
+     <script type="text/javascript">
+        function noBack()
+         {
+             window.history.forward()
+         }
+        noBack();
+        window.onload = noBack;
+        window.onpageshow = function(evt) { if (evt.persisted) noBack() }
+        window.onunload = function() { void (0) }
+    </script>
+	</form>
+	</body>
+	</html>

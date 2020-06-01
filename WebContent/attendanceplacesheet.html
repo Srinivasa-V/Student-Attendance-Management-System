@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Bangalore Institute of Technology</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bit logo.jpg" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.row {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        
+        img {
+            height: 150px;
+            width: 150px;
+        }
+        
+        .heading {
+            color: blue;
+            padding-left: 25px;
+        }
+        #footer {
+            background-color: grey;
+            color: white;
+            text-align: right;
+            clear: both;
+            position: relative;
+            height: 45px;
+            margin-top:40px; 
+        }
+        
+        h1 {
+            line-height: 1.5;
+            font-size: 50px;
+            color: blue;
+            margin-left: 20px;
+        }
+        
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+        body {
+            margin: 20px 10px 20px 20px;
+        }
+
+
+ table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+</style>
+</head>
+<body>
+<form action="storage" method="get">
+	 <div class="row">
+        <div class="col-md-1.5">
+            <img src="bit logo.jpg" alt="bit-logo">
+        </div>
+        <div class="col-md-10.5">
+            <h1>Bangalore Institute <br>of Technology</h1>
+        </div>
+    </div>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="">ATTENDANCE SHEET</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="teachersubjectselectionsheet.html">LOG OUT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
+
+<table>
+        <thead>
+            <tr>
+	<td>
+                SUBJECT DETAILS
+	</td>
+<td>Scheme:<input type="text" name="scheme" placeholder="enter the scheme"></td>
+            </tr>
+        
+        <tr>
+            <td>
+                <h2>Date: <input type="date" id="datepick" class="col-md-8 col-lg-8" ej-datepicker e-value="dateValue" e-dateformat="dd-MMM-yyyy" e-change="changefomat()" e-enableStrictMode="true" name="attdate"/></h2>
+            </td>
+            <td>subject_code:<input type="text" name="subcode" placeholder="enter the subject_code"></td>
+        </tr>
+        
+        <tr>
+            <td>USN</td>
+            <td>ATENDANCE</td>
+        </tr>
+        <tr>
+            <td> IS001</td>
+            <td>
+                <h3><input type="radio" name="status1" value="present"> Present
+                    <input type="radio" name="status1" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS002</td>
+            <td>
+                <h3><input type="radio" name="status2" value="present"> Present
+                    <input type="radio" name="status2" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS003</td>
+            <td>
+                <h3><input type="radio" name="status3" value="present"> Present
+                    <input type="radio" name="status3" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS004</td>
+            <td>
+                <h3><input type="radio" name="status4" value="present"> Present
+                    <input type="radio" name="status4" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS005</td>
+            <td>
+                <h3><input type="radio" name="status5" value="present"> Present
+                    <input type="radio" name="status5" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS006</td>
+            <td>
+                <h3><input type="radio" name="status6" value="present"> Present
+                    <input type="radio" name="status6" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS007</td>
+            <td>
+                <h3><input type="radio" name="status7" value="present"> Present
+                    <input type="radio" name="status7" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS008</td>
+            <td>
+                <h3><input type="radio" name="status8" value="present"> Present
+                    <input type="radio" name="status8" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS009</td>
+            <td>
+                <h3><input type="radio" name="status9" value="present"> Present
+                    <input type="radio" name="status9" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS010</td>
+            <td>
+                <h3><input type="radio" name="status10" value="present"> Present
+                    <input type="radio" name="status10" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS011</td>
+            <td>
+                <h3><input type="radio" name="status11" value="present"> Present
+                    <input type="radio" name="status11" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS012</td>
+            <td>
+                <h3><input type="radio" name="status12" value="present"> Present
+                    <input type="radio" name="status12" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS013</td>
+            <td>
+                <h3><input type="radio" name="status13" value="present"> Present
+                    <input type="radio" name="status13" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS014</td>
+            <td>
+                <h3><input type="radio" name="status14" value="present"> Present
+                    <input type="radio" name="status14" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS015</td>
+            <td>
+                <h3><input type="radio" name="status15" value="present"> Present
+                    <input type="radio" name="status15" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS016</td>
+            <td>
+                <h3><input type="radio" name="status16" value="present"> Present
+                    <input type="radio" name="status16" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS017</td>
+            <td>
+                <h3><input type="radio" name="status17" value="present"> Present
+                    <input type="radio" name="status17" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS018</td>
+            <td>
+                <h3><input type="radio" name="status18" value="present"> Present
+                    <input type="radio" name="status18" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS019</td>
+            <td>
+                <h3><input type="radio" name="status19" value="present"> Present
+                    <input type="radio" name="status19" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS020</td>
+            <td>
+                <h3><input type="radio" name="status20" value="present"> Present
+                    <input type="radio" name="status20" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS021</td>
+            <td>
+                <h3><input type="radio" name="status21" value="present"> Present
+                    <input type="radio" name="status21" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS022</td>
+            <td>
+                <h3><input type="radio" name="status22" value="present"> Present
+                    <input type="radio" name="status22" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>	
+	<tr>
+            <td> IS023</td>
+            <td>
+                <h3><input type="radio" name="status23" value="present"> Present
+                    <input type="radio" name="status23" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS024</td>
+            <td>
+                <h3><input type="radio" name="status24" value="present"> Present
+                    <input type="radio" name="status24" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS025</td>
+            <td>
+                <h3><input type="radio" name="status25" value="present"> Present
+                    <input type="radio" name="status25" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS026</td>
+            <td>
+                <h3><input type="radio" name="status26" value="present"> Present
+                    <input type="radio" name="status26" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS027</td>
+            <td>
+                <h3><input type="radio" name="status27" value="present"> Present
+                    <input type="radio" name="status27" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS028</td>
+            <td>
+                <h3><input type="radio" name="status28" value="present"> Present
+                    <input type="radio" name="status28" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS029</td>
+            <td>
+                <h3><input type="radio" name="status29" value="present"> Present
+                    <input type="radio" name="status29" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS030</td>
+            <td>
+                <h3><input type="radio" name="status30" value="present"> Present
+                    <input type="radio" name="status30" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS031</td>
+            <td>
+                <h3><input type="radio" name="status31" value="present"> Present
+                    <input type="radio" name="status31" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS032</td>
+            <td>
+                <h3><input type="radio" name="status32" value="present"> Present
+                    <input type="radio" name="status32" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS033</td>
+            <td>
+                <h3><input type="radio" name="status33" value="present"> Present
+                    <input type="radio" name="status33" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS034</td>
+            <td>
+                <h3><input type="radio" name="status34" value="present"> Present
+                    <input type="radio" name="status34" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS035</td>
+            <td>
+                <h3><input type="radio" name="status35" value="present"> Present
+                    <input type="radio" name="status35" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS036</td>
+            <td>
+                <h3><input type="radio" name="status36" value="present"> Present
+                    <input type="radio" name="status36" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS037</td>
+            <td>
+                <h3><input type="radio" name="status37" value="present"> Present
+                    <input type="radio" name="status37" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS038</td>
+            <td>
+                <h3><input type="radio" name="status38" value="present"> Present
+                    <input type="radio" name="status38" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS039</td>
+            <td>
+                <h3><input type="radio" name="status39" value="present"> Present
+                    <input type="radio" name="status39" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS040</td>
+            <td>
+                <h3><input type="radio" name="status40" value="present"> Present
+                    <input type="radio" name="status40" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS041</td>
+            <td>
+                <h3><input type="radio" name="status41" value="present"> Present
+                    <input type="radio" name="status41" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS042</td>
+            <td>
+                <h3><input type="radio" name="status42" value="present"> Present
+                    <input type="radio" name="status42" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS043</td>
+            <td>
+                <h3><input type="radio" name="status43" value="present"> Present
+                    <input type="radio" name="status43" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS044</td>
+            <td>
+                <h3><input type="radio" name="status44" value="present"> Present
+                    <input type="radio" name="status44" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS045</td>
+            <td>
+                <h3><input type="radio" name="status45" value="present"> Present
+                    <input type="radio" name="status45" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS046</td>
+            <td>
+                <h3><input type="radio" name="status46" value="present"> Present
+                    <input type="radio" name="status46" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS047</td>
+            <td>
+                <h3><input type="radio" name="status47" value="present"> Present
+                    <input type="radio" name="status47" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td> IS048</td>
+            <td>
+                <h3><input type="radio" name="status48" value="present"> Present
+                    <input type="radio" name="status48" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+        <tr>
+            <td> IS049</td>
+            <td>
+                <h3><input type="radio" name="status49" value="present"> Present
+                    <input type="radio" name="status49" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+        <tr>
+            <td> IS050</td>
+            <td>
+                <h3><input type="radio" name="status50" value="present"> Present
+                    <input type="radio" name="status50" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+        <tr>
+            <td>IS051</td>
+            <td>
+                <h3><input type="radio" name="status51" value="present"> Present
+                    <input type="radio" name="status51" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+        <tr>
+            <td>IS052</td>
+            <td>
+                <h3><input type="radio" name="status52" value="present"> Present
+                    <input type="radio" name="status52" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+ <tr>
+            <td>IS053</td>
+            <td>
+                <h3><input type="radio" name="status53" value="present"> Present
+                    <input type="radio" name="status53" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>IS054</td>
+            <td>
+                <h3><input type="radio" name="status54" value="present"> Present
+                    <input type="radio" name="status54" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	 <tr>
+            <td>IS055</td>
+            <td>
+                <h3><input type="radio" name="status55" value="present"> Present
+                    <input type="radio" name="status55" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	 <tr>
+            <td>IS056</td>
+            <td>
+                <h3><input type="radio" name="status56" value="present"> Present
+                    <input type="radio" name="status56" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	 <tr>
+            <td>IS057</td>
+            <td>
+                <h3><input type="radio" name="status57" value="present"> Present
+                    <input type="radio" name="status57" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	 <tr>
+            <td>IS058</td>
+            <td>
+                <h3><input type="radio" name="status58" value="present"> Present
+                    <input type="radio" name="status58" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	 <tr>
+            <td>IS059</td>
+            <td>
+                <h3><input type="radio" name="status59" value="present"> Present
+                    <input type="radio" name="status59" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	 <tr>
+            <td>IS060</td>
+            <td>
+                <h3><input type="radio" name="status60" value="present"> Present
+                    <input type="radio" name="status60" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	 <tr>
+            <td>IS061</td>
+            <td>
+                <h3><input type="radio" name="status61" value="present"> Present
+                    <input type="radio" name="status61" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	 <tr>
+            <td>IS062</td>
+            <td>
+                <h3><input type="radio" name="status62" value="present"> Present
+                    <input type="radio" name="status62" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	 <tr>
+            <td>IS063</td>
+            <td>
+                <h3><input type="radio" name="status63" value="present"> Present
+                    <input type="radio" name="status63" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	 <tr>
+            <td>IS064</td>
+            <td>
+                <h3><input type="radio" name="status64" value="present"> Present
+                    <input type="radio" name="status64" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+ <tr>
+            <td>IS065</td>
+            <td>
+                <h3><input type="radio" name="status65" value="present"> Present
+                    <input type="radio" name="status65" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>	
+ <tr>
+            <td>IS066</td>
+            <td>
+                <h3><input type="radio" name="status66" value="present"> Present
+                    <input type="radio" name="status66" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>	
+	 <tr>
+            <td>IS067</td>
+            <td>
+                <h3><input type="radio" name="status67" value="present"> Present
+                    <input type="radio" name="status67" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	 <tr>
+            <td>IS068</td>
+            <td>
+                <h3><input type="radio" name="status68" value="present"> Present
+                    <input type="radio" name="status68" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>	
+ <tr>
+            <td>IS069</td>
+            <td>
+                <h3><input type="radio" name="status69" value="present"> Present
+                    <input type="radio" name="status69" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	 <tr>
+            <td>IS070</td>
+            <td>
+                <h3><input type="radio" name="status70" value="present"> Present
+                    <input type="radio" name="status70" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>IS071</td>
+            <td>
+                <h3><input type="radio" name="status71" value="present"> Present
+                    <input type="radio" name="status71" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>IS072</td>
+            <td>
+                <h3><input type="radio" name="status72" value="present"> Present
+                    <input type="radio" name="status72" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>IS073</td>
+            <td>
+                <h3><input type="radio" name="status73" value="present"> Present
+                    <input type="radio" name="status73" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>IS074</td>
+            <td>
+                <h3><input type="radio" name="status74" value="present"> Present
+                    <input type="radio" name="status74" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>IS075</td>
+            <td>
+                <h3><input type="radio" name="status75" value="present"> Present
+                    <input type="radio" name="status75" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>IS400</td>
+            <td>
+                <h3><input type="radio" name="status76" value="present"> Present
+                    <input type="radio" name="status76" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>IS401</td>
+            <td>
+                <h3><input type="radio" name="status77" value="present"> Present
+                    <input type="radio" name="status77" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>IS402</td>
+            <td>
+                <h3><input type="radio" name="status78" value="present"> Present
+                    <input type="radio" name="status78" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>IS403</td>
+            <td>
+                <h3><input type="radio" name="status79" value="present"> Present
+                    <input type="radio" name="status79" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>IS404</td>
+            <td>
+                <h3><input type="radio" name="status80" value="present"> Present
+                    <input type="radio" name="status80" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>IS405</td>
+            <td>
+                <h3><input type="radio" name="status81" value="present"> Present
+                    <input type="radio" name="status81" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>IS406</td>
+            <td>
+                <h3><input type="radio" name="status82" value="present"> Present
+                    <input type="radio" name="status82" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>IS407</td>
+            <td>
+                <h3><input type="radio" name="status83" value="present"> Present
+                    <input type="radio" name="status83" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>IS408</td>
+            <td>
+                <h3><input type="radio" name="status84" value="present"> Present
+                    <input type="radio" name="status84" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>IS409</td>
+            <td>
+                <h3><input type="radio" name="status85" value="present"> Present
+                    <input type="radio" name="status85" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>IS410</td>
+            <td>
+                <h3><input type="radio" name="status86" value="present"> Present
+                    <input type="radio" name="status86" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>IS411</td>
+            <td>
+                <h3><input type="radio" name="status87" value="present"> Present
+                    <input type="radio" name="status87" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>IS412</td>
+            <td>
+                <h3><input type="radio" name="status88" value="present"> Present
+                    <input type="radio" name="status88" value="absent"> Absent
+                </h3>
+            </td>
+        </tr>
+        </thead>
+        </table><table padding: 5px>
+        <tr><td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+	<center>
+    <input type="submit" name="submit" value="add" style=" height: 30px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <a href="teachersubjectselectionsheet.html"><input type="button" name="cancel" value="back" style=" height: 30px"></a>
+    </center>
+</td></tr>
+    </table>
+</form>
+
+<script>
+ $scope.changeformat=function(){
+	 $scope.attdate=$filter('date')
+	 ($scope.attdate,"dd-MMM-yyyy");
+ };
+ 
+</script>
+ <div>
+        <footer id="footer">
+            <p>© Copyright 2019 Bangalore Institute of Technology.All rights reserved</p>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        function noBack()
+         {
+             window.history.forward()
+         }
+        noBack();
+        window.onload = noBack;
+        window.onpageshow = function(evt) { if (evt.persisted) noBack() }
+        window.onunload = function() { void (0) }
+    </script>
+
+</body>
+</html>

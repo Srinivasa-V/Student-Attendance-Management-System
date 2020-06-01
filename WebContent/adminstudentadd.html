@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bangalore Institute of Technology</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bit logo.jpg" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+            .row {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        
+        img {
+            height: 150px;
+            width: 150px;
+        }
+        
+        .heading {
+            color: blue;
+            padding-left: 25px;
+        }
+       
+        #footer {
+            background-color: grey;
+            color: white;
+            text-align: right;
+            clear: both;
+            position: relative;
+            height: 45px;
+            margin-top:40px; 
+        }
+        
+        h1 {
+            line-height: 1.5;
+            font-size: 50px;
+            color: blue;
+            margin-left: 20px;
+        }
+        
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+        body {
+            margin: 20px 10px 20px 20px;
+        }
+.block{
+	float: left;
+	width: 50%;
+	border: 2px solid black;
+	padding:10px;		
+	box-sizing:border-box;
+	background-color: #719192;
+	
+}
+.col{
+	background-color: white;
+	border: 2px solid black;
+	padding:4px;
+}	
+.colo{
+	background-color: white;
+	border: 2px solid black;
+	padding:4px;
+}
+.block1{
+	float: left;
+	width: 50%;
+	border: 2px solid black;
+	padding:10px;		
+	box-sizing:border-box;
+	background-color: #719192;
+	
+}
+
+.block2{
+	float: left;
+	width: 50%;
+	border: 2px solid black;
+	padding:10px;		
+	box-sizing:border-box;
+	background-color: #719192;
+	
+}
+table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+<form action="adminstudentadd" method="get">
+    <div class="row">
+        <div class="col-md-1.5">
+            <img src="bit logo.jpg" alt="bit-logo">
+        </div>
+        <div class="col-md-10.5">
+            <h1>Bangalore Institute <br>of Technology</h1>
+        </div>
+    </div>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="">Admin Portal-Add Student</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                <ul class="navbar-nav ml-auto">
+                    
+                    <li class="nav-item"><a class="nav-link" href="index1.html">Log Out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br>
+<table>
+        <thead>
+            <tr>
+	<th>
+                STUDENT DETAILS
+	</th>
+
+        </thead>        <tr>
+            <th>DETAILS</th>
+            <th>INFORMATION</th>
+        </tr>
+        <tr>
+            <td> NAME</td>
+            <td>
+                <h3><input type="text" name="name" placeholder="enter the name" style="height: 30px;">
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>SEMESTER</td>
+            <td>
+                <h3><input type="number" name="semester" placeholder="enter the semester" style="height: 30px;">
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>SCHEME</td>
+            <td>
+                <h3> <input type="text" name="scheme" placeholder="enter the scheme" style="height: 30px;">
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>USN</td>
+            <td>
+                <h3><input type="text" name="usn" placeholder="enter the USN" style="height: 30px;">
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>PROCTOR_ID</td>
+            <td>
+                <h3><input type="text" name="proctorid" placeholder="enter the proctor-id" style="height: 30px;">
+                </h3>
+            </td>
+        </tr>
+	<tr>
+            <td>PASSWORD</td>
+            <td>
+                <h3><input type="text" name="password" placeholder="enter the password" style="height: 30px;">
+                </h3>
+            </td>
+        </tr>
+        	<tr>
+            <td>ROLL_NO</td>
+            <td>
+                <h3><input type="text" name="roll" placeholder="enter the roll_no" style="height: 30px;">
+                </h3>
+            </td>
+        </tr>
+    
+    
+     </table>
+    <center>
+    <input type="submit" name="submit" value="add" style=" height: 30px">
+    <a href="adminsheetafterlogin.html"><input type="button" name="cancel" value="back" style=" height: 30px"></a>
+    </center>
+    <div>
+    <footer id="footer">
+    <p>© Copyright 2019 Bangalore Institute of Technology.All rights reserved</p>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        function noBack()
+         {
+             window.history.forward()
+         }
+        noBack();
+        window.onload = noBack;
+        window.onpageshow = function(evt) { if (evt.persisted) noBack() }
+        window.onunload = function() { void (0) }
+    </script>	
+    </form>
+</body>
+
+</html>
+    
+    

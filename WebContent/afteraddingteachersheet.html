@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bangalore Institute of Technology</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bit logo.jpg" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<style>
+.box{
+margin-top:250px;
+padding: 50px;
+border: 2px solid black;
+font-family: verdana;
+font-size: 30px;
+
+}
+</style>
+</head>
+<body>
+<div class="box">
+
+<div style="text-align:center"><b>Data has been saved in the database</b></div>
+<div style="text-align:center"><a href="adminaddteacher.html"><u>to insert new </u></a>&nbsp&nbsp&nbsp<a href="adminsheetafterlogin.html"><u>back</u></a></div>
+
+</div>
+<script type="text/javascript">
+        function noBack()
+         {
+             window.history.forward()
+         }
+        noBack();
+        window.onload = noBack;
+        window.onpageshow = function(evt) { if (evt.persisted) noBack() }
+        window.onunload = function() { void (0) }
+    </script>
+</body>
+</html>
